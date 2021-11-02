@@ -1,5 +1,6 @@
 from app import app
 from flask import request
+from app.tools.sum import sum
 
 @app.route('/')
 @app.route('/index')
@@ -14,11 +15,4 @@ def add():
     total = sum(_list)
     return 'Result= ' + str(total)
 
-def sum(arg):
-    try: 
-        total = 0
-        for val in arg:
-            total += val
-    except Exception:
-        return "Error occured!", 500
-    return total
+
