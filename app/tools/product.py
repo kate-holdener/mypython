@@ -3,6 +3,7 @@ def product(arg):
         total = 1
         for val in arg:
             total *= val
+
     except Exception:
         return "Error occured!", 500
 
