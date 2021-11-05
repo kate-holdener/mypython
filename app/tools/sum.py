@@ -1,6 +1,6 @@
 def sum(arg):
     try: 
-        total = 1
+        total = 0
         for val in arg:
             total += val
 
